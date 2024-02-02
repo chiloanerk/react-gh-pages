@@ -147,6 +147,15 @@ At this point, the React app's `package.json` file includes a property named `ho
         "start": "react-scripts start",
         "build": "react-scripts build",
     ```
+3. (Optional) Configure base URL for Vite applications.
+
+    You can do that by adding the line below inside the `vite.config.js` file :
+
+    ```diff
+    export default defineConfig({
+    +   base: "/react-gh-pages/",
+        plugins: [react()],
+    ```
 
 At this point, the  React app's `package.json` file includes deployment scripts.
 
